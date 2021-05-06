@@ -19,28 +19,7 @@
 }
 
 .nav__notification {
-  background-color: tomato;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 10px;
-  font-weight: 600;
   position: absolute;
-  right: -8px;
-  top: -6px;
-}
-
-.nav__notification__elipsis {
-  color: tomato;
-  font-size: 30px;
-  position: absolute;
-  right: -8px;
-  top: -25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  right: -10px;
+  top: -8px;
 }

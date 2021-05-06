@@ -1,0 +1,23 @@
+.badge {
+  background-color: tomato;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-ellipsis {
+  color: tomato;
+  font-size: 30px;
+  position: absolute;
+  right: -8px;
+  top: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
