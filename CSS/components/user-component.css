@@ -33,6 +33,17 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
+.user-component__subtitle-setting {
+  display: flex;
+  align-content: center;
+}
+
+.user-component__subtitle-setting i {
+  margin-top: 7px;
+  margin-left: 3px;
+  color: red;
+}
+
 .user-component__xl {
   width: 70px;
   height: 70px;
