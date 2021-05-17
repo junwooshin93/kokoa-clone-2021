@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 11000vh;
+  height: 500vh;
 }
 
 #chat-screen .alt-header {
@@ -14,11 +14,23 @@
   background-color: #abc1d1;
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.6s linear;
 }
 
 .chats-timestamp {
@@ -103,6 +115,7 @@
   height: 20px;
   border: var(--main-border);
   border-radius: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -149,4 +162,21 @@
 
 .reply input::placeholder {
   padding-left: 10px;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-smile,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 98vw;
+  transform: translateX(-11%);
 }
